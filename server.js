@@ -26,6 +26,8 @@ server.use((req, res, next) => {
     next();
 });
 
+require('./api/models/postModels');
+require('./api/models/userModels');
 const routes = require('./api/routes/routes');
 routes(server);
 
